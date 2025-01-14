@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { RedditResponse, SortOption } from '../types/reddit';
 
-const BASE_URL = process.env.REACT_APP_API_URL || 'https://backendreddit-1.onrender.com/api';
+const BASE_URL = 'https://backendreddit-1.onrender.com/api';
 
 export const fetchPosts = async (sort: SortOption = 'hot', limit: number = 10) => {
   try {
